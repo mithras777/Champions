@@ -9,6 +9,3 @@ Adds dynamic, transforming Champions with unique abilities and strategies to Bal
 ## Installation
 1. Download the mod files.
 2. Follow the installation instructions provided in the repository.
-
-## Credits
-Special thanks to Elise Rochefort for the incredible screenarchery showcase.
