@@ -55,7 +55,6 @@ Requires Script Extender for full functionality.
 ## Credits
 
 - Developed by Mithras666.
-- Special thanks to Elise Rochefort for the screenarchery showcase.
 - Thanks to the BG3 Modding Community for feedback and support.
 
 ## License
