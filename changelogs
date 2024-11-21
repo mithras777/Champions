@@ -1,0 +1,14 @@
+Version 1.3
+
+    Item Addition: Added a 50% chance for Champions to receive items.
+    Necromancer Update: Removed turn-based surfaces created by Necromancer transformations.
+    Follower Restrictions: Prevented potential followers from transforming into Champions.
+    Boss Restrictions: Disallowed specific bosses (Ketheric, Ethel, Skeletal Dragon, Netherbrain, Raphael) from transforming into Champions.
+    Improved Events: Enhanced party table calculation events for better gameplay mechanics.
+
+Version 1.2
+
+    Transformation Fix: Ensures that entities won't re-evaluate and transform multiple times once their health drops below the transformation threshold.
+    Compatibility Fixes:
+        Resolved incompatibility with the "Enemy Stats" mod.
+        Resolved incompatibility with the "Absolute Wrath" mod.
