@@ -1,0 +1,413 @@
+{
+    "SchemaVersion": 1,
+    "ModName": "Champions",
+    "Tabs": [
+        {
+            "TabId": "champions",
+            "TabName": "Champions",
+            "Sections": [
+                {
+                    "SectionId": "ai_settings",
+                    "SectionName": "Mode Settings",
+                    "Settings": [
+                        {
+                            "Id": "EnableChampions",
+                            "Name": "Enable Champions",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "When an enemy reaches a percentage of their max health, they may become a Champion.\nThey gain buffs according to their class.",
+                            "Handles": {
+                                "NameHandle": "had2dfee0c41d40538268856f99d2092ebd5c",
+                                "DescriptionHandle": "he3a8949f042a4f58a43cc23bfee1a8323433"
+                            }
+                        },
+                        {
+                            "Id": "Timer",
+                            "Name": "Champion Timer",
+                            "Type": "slider_int",
+                            "Default": 5,
+                            "Description": "Turn timer for Champion mode, after which the enemy will turn back to normal",
+                            "Handles": {
+                                "NameHandle": "h2e068c9406d147fc8bc3f0bede5cba6468fe",
+                                "DescriptionHandle": "h72f2d071b98646afbf50714f10816f28b7gf"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 20
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "EnableChampions",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "ChampionsHealth",
+                            "Name": "Health Threshold",
+                            "Type": "slider_int",
+                            "Default": 40,
+                            "Description": "Percentage of Max Health to trigger Champion Mode",
+                            "Handles": {
+                                "NameHandle": "h2e068c9406d147fc8bc3f0bede5cba6468fe",
+                                "DescriptionHandle": "h72f2d071b98646afbf50714f10816f28bg4f"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 99
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "EnableChampions",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "ChampionsChance",
+                            "Name": "Champion Activation Chance",
+                            "Type": "slider_int",
+                            "Default": 50,
+                            "Description": "Chance for Champion Mode to activate when health threshold is reached",
+                            "Handles": {
+                                "NameHandle": "ha6903a47801d48c5afbca2e4cf775aca5b0f",
+                                "DescriptionHandle": "h0c536b587d984597832ec3fa07143699656f"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "EnableChampions",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "OnlyChampionClones",
+                            "Name": "Only Give Champions to Clones",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "When enabled, only entities with the 'SAVAGE_CLONE' or 'SAVAGE_CLONE2' status will become Champions.",
+                            "Handles": {
+                                "NameHandle": "honly_clones_champion_name_handle",
+                                "DescriptionHandle": "honly_clones_champion_description_handle"
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "EnableChampions",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+        ,
+        {
+            "TabId": "golden_mode",
+            "TabName": "Special Modes",
+            "Sections": [
+                {
+                    "SectionId": "golden_mode_settings",
+                    "SectionName": "Golden Mode Settings",
+                    "Settings": [
+                        {
+                            "Id": "EnableGoldenChampion",
+                            "Name": "Enable Golden Champion",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable Golden Champion mode, giving additional powerful buffs to Champions.",
+                            "Handles": {
+                                "NameHandle": "hgolden_enable_name_handle",
+                                "DescriptionHandle": "hgolden_enable_description_handle"
+                            }
+                        },
+                        {
+                            "Id": "GoldenChampionHealth",
+                            "Name": "Golden Champion Health Threshold",
+                            "Type": "slider_int",
+                            "Default": 15,
+                            "Description": "Percentage of Max Health to trigger Golden Champion Mode",
+                            "Handles": {
+                                "NameHandle": "hgolden_health_name_handle",
+                                "DescriptionHandle": "hgolden_health_description_handle"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "EnableGoldenChampion",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "GoldenChampionChance",
+                            "Name": "Golden Champion Activation Chance",
+                            "Type": "slider_int",
+                            "Default": 30,
+                            "Description": "Chance for Golden Champion Mode to activate when health threshold is reached",
+                            "Handles": {
+                                "NameHandle": "hgolden_chance_name_handle",
+                                "DescriptionHandle": "hgolden_chance_description_handle"
+                            },
+                            "Options": {
+                                "Min": 0,
+                                "Max": 100
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "EnableGoldenChampion",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "Id": "EnableCeremorph",
+                            "Name": "Enable Ceremorph",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Description": "Enable Ceremorph mode.",
+                            "Handles": {
+                                "NameHandle": "hceremorph_enable_name_handle",
+                                "DescriptionHandle": "hceremorph_enable_description_handle"
+                            }
+                        },
+                        {
+                            "Id": "TimerCeremorph",
+                            "Name": "Ceremorph Timer",
+                            "Type": "slider_int",
+                            "Default": 4,
+                            "Description": "Turn timer for Dazed Ceremorphs, after which they will turn into a Mind Flayer permanently.",
+                            "Handles": {
+                                "NameHandle": "hceremorph_timer_name_handle",
+                                "DescriptionHandle": "hceremorph_timer_description_handle"
+                            },
+                            "Options": {
+                                "Min": 1,
+                                "Max": 100
+                            },
+                            "VisibleIf": {
+                                "Conditions": [
+                                    {
+                                        "SettingId": "EnableCeremorph",
+                                        "ExpectedValue": "true",
+                                        "Operator": "=="
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "TabId": "champion_blacklist",
+            "TabName": "Whitelist",
+            "Sections": [
+                {
+                    "SectionId": "champion_blacklist_settings",
+                    "SectionName": "Champion Whitelist (Uncheck to disable)",
+                    "Settings": [
+                        {
+                            "Id": "EnablePyromancer",
+                            "Name": "Pyromancer",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Pyromancer champions."
+                        },
+                        {
+                            "Id": "EnableCryomancer",
+                            "Name": "Cryomancer",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Cryomancer champions."
+                        },
+                        {
+                            "Id": "EnableStormcaller",
+                            "Name": "Stormcaller",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Stormcaller champions."
+                        },
+                        {
+                            "Id": "EnableNecromancer",
+                            "Name": "Necromancer",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Necromancer champions."
+                        },
+                        {
+                            "Id": "EnableStoneskin",
+                            "Name": "Stoneskin",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Stoneskin champions."
+                        },
+                        {
+                            "Id": "EnableBerserker",
+                            "Name": "Berserker",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Berserker champions."
+                        },
+                        {
+                            "Id": "EnableBloodthirsty",
+                            "Name": "Bloodthirsty",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Bloodthirsty champions."
+                        },
+                        {
+                            "Id": "EnableAssassin",
+                            "Name": "Assassin",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Assassin champions."
+                        },
+                        {
+                            "Id": "EnableIllusionist",
+                            "Name": "Illusionist",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Illusionist champions."
+                        },
+                        {
+                            "Id": "EnableTrickster",
+                            "Name": "Trickster",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Trickster champions."
+                        },
+                        {
+                            "Id": "EnablePaladin",
+                            "Name": "Paladin",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Paladin champions."
+                        },
+                        {
+                            "Id": "EnableOathbreaker",
+                            "Name": "Oathbreaker",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Oathbreaker champions."
+                        },
+                        {
+                            "Id": "EnablePriest",
+                            "Name": "Priest",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Priest champions."
+                        },
+                        {
+                            "Id": "EnableHealer",
+                            "Name": "Healer",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Healer champions."
+                        },
+                        {
+                            "Id": "EnableHeretic",
+                            "Name": "Heretic",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Heretic champions."
+                        },
+                        {
+                            "Id": "EnableWebweaver",
+                            "Name": "Webweaver",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Webweaver champions."
+                        },
+                        {
+                            "Id": "EnableDruid",
+                            "Name": "Druid",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Druid champions."
+                        },
+                        {
+                            "Id": "EnableShaman",
+                            "Name": "Shaman",
+                            "Type": "checkbox",
+                            "Default": true,
+                            "Tooltip": "Enable Shaman champions."
+                        }
+                    ]
+                }
+            ]
+        }
+        ,
+        {
+            "TabId": "randomized_classes",
+            "TabName": "Randomized",
+            "Sections": [
+                {
+                    "SectionId": "randomized_class_settings",
+                    "SectionName": "Randomized Class Settings",
+                    "Settings": [
+                        {
+                            "Id": "RandomizedClassless",
+                            "Name": "Enable Randomized Classless Mode",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Enemies without a clear class will receive random buffs.",
+                            "Handles": {
+                                "NameHandle": "hrandomized_classless_name_handle",
+                                "DescriptionHandle": "hrandomized_classless_description_handle"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "TabId": "debug",
+            "TabName": "Debug",
+            "Sections": [
+                {
+                    "SectionId": "debug_settings",
+                    "SectionName": "Debug Settings",
+                    "Settings": [
+                        {
+                            "Id": "Debug",
+                            "Name": "Enable Debug Messages",
+                            "Type": "checkbox",
+                            "Default": false,
+                            "Description": "Enable detailed debug messages for Champions mode.",
+                            "Handles": {
+                                "NameHandle": "hdebug_name_handle",
+                                "DescriptionHandle": "hdebug_description_handle"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

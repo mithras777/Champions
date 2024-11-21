@@ -1,0 +1,5 @@
+{
+    "RequiredVersion": 18,
+    "ModTable": "Champions",
+    "FeatureFlags": ["Lua"]
+}

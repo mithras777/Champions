@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+	<content contentuid="h9385d514e7ef4977b7feecbb240dae2ffe9a" version="1">Stoneskin</content>
+	<content contentuid="h4749449a637441eca2063232530426b6828f" version="1">This character is a Stoneskin, granting them &lt;LSTag Tooltip="TemporaryHitPoints"&gt;Temporary Hitpoints&lt;/LSTag&gt; equal to 15% of their max health. They are 33% bigger in size and gain &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to all physical damage.</content>
+	<content contentuid="hc8630dea95c74463ae1f5c7d60a5ce65d9ca" version="1">Stormcaller</content>
+	<content contentuid="h31b7903aac544fc79ed023d8bb4b475b84d5" version="1">Necromancer</content>
+	<content contentuid="h67a5bf65e5164d4bbcd2f62964d595dd47b0" version="1">Pyromancer</content>
+	<content contentuid="hfa1992bced664c5682df7f0ad3fd50d2g467" version="1">This character is a Pyromancer, gaining &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Fire damage.</content>
+	<content contentuid="h95a0fda09685498eba312dbf2ff940adfba4" version="1">This character commands the forces of the undead, summoning a Ghoul and gaining &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Acid and Necrotic damage.</content>
+	<content contentuid="h9de3d3c5bb2242c6a27027c2ca5c80b7f86f" version="1">This character is imbued with the power of storms, granting them &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Lightning.</content>
+	<content contentuid="hdb64579f4f0741db84ed1dfc0a69f103318f" version="1">Cryomancer</content>
+	<content contentuid="h0b03b83898c34ff0b64dbbfe5b7a14a38c3d" version="1">Druid</content>
+	<content contentuid="hfed3e18c48e546239b24b965c5c3e97ee080" version="1">Berserker</content>
+	<content contentuid="h991fd19aff5144cf8eb7340cddf85cb43c0c" version="1">Assassin</content>
+	<content contentuid="he5d84a05172a48f6a587ca3cd26d594e1af3" version="1">Paladin</content>
+	<content contentuid="h2602652f088348b89387f412cf8fd284008e" version="1">This character is a Paladin. They gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Radiant and Necrotic damage. Their weapons also deal Radiant damage.</content>
+	<content contentuid="hf5e9f0a87dd44cf49771e065f1c2b7490e3b" version="1">This character is a Shapeshifting Druid. They gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Poison and Acid damage. They cannot become diseased.</content>
+	<content contentuid="h322538ef47bb40fab1a594964eb3213c46aa" version="1">This character is a Berserker. They gain &lt;LSTag Tooltip="MovementSpeed"&gt;movement speed&lt;/LSTag&gt;, as well as +2 bonus to their Damage and &lt;LSTag Tooltip="AttackRoll"&gt;Attack Rolls&lt;/LSTag&gt;.</content>
+	<content contentuid="h2e19aec10d9f4d2ab1877987bec30b3d9c84" version="1">This character is an Assassin. They gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Poison and Psychic damage, and they can turn invisible.</content>
+	<content contentuid="h5c6183b49855489fb1dbb8b7315c6f75e7b8" version="1">Illusionist</content>
+	<content contentuid="h136f6e8da47642c28f0b530553cf53d3b215" version="1">This character is a Master of Illusion. They create illusions of themself, and they gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Psychic and Force damage.</content>
+	<content contentuid="hfa57d1bf1ec44794b7f8ecf94697056ce9be" version="1">This character is a Cryomancer. They gain &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Cold damage.</content>
+	<content contentuid="h0c536b587d984597832ec3fa07143699656f" version="1">Chance for Champion Mode to activate when health threshold is reached</content>
+	<content contentuid="ha6903a47801d48c5afbca2e4cf775aca5b0f" version="1">Champion Activation Chance</content>
+	<content contentuid="h72f2d071b98646afbf50714f10816f28bg4f" version="1">Percentage of Max Health to trigger Champion Mode.</content>
+	<content contentuid="had2dfee0c41d40538268856f99d2092ebd5c" version="1">Enable Champions</content>
+	<content contentuid="h29d8e2b6a1ef411aabb0a624b67ef1c1e4a5" version="1">Trickster</content>
+	<content contentuid="h10c4cfa273c446b2bb4df2c25e76c1a26e0a" version="1">This character is a Trickster, gaining &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Charm and Fear effects.</content>
+	<content contentuid="h71c8c8e3a4bb4f56b8d529c2e8abf2c8e5e9" version="1">Healer</content>
+	<content contentuid="h36e9e0d3c6c2435e8a86e0f7c7d5b1c1b2b1" version="1">This character is a Healer, gaining a 20% bonus to all healing effects.</content>
+	<content contentuid="hf29c0e7b38e546d5b7f0f2c6e4e2b5d3d1c4" version="1">Priest</content>
+	<content contentuid="h96c3e9f5b9a64d45a7b0c5e2e3f2b4d2e2a3" version="1">This character is a Priest, gaining &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Radiant damage and &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Necrotic damage.</content>
+	<content contentuid="he19b8f1d4e134c6db7f9e2d3e4f1c5b2c4a5" version="1">Webweaver</content>
+	<content contentuid="h8b9c8d7b6a534c56b8d9e0c5e7d6a8b2d3c4" version="1">This character is a Webweaver, gaining &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Poison and &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Bludgeoning damage.</content>
+	<content contentuid="h4e6f7a8b9c7d6e5b4a3b2c1d0f2e3d4c5b6a" version="1">Shaman</content>
+	<content contentuid="h2b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f1a" version="1">This character is a Shaman, gaining &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Psychic and Force damage.</content>
+	<content contentuid="hfb7afd190f02499e8456a2d8659ce048ga66" version="1">Golden</content>
+	<content contentuid="hdcb95ef4af0a4255b13881c09fbbd5737e1b" version="1">This character has been turned to gold, gaining a golden appearance and special properties.</content>
+	<content contentuid="he3a8949f042a4f58a43cc23bfee1a8618433" version="1">When an enemy reaches a percentage of their max health, they may become Champions.&lt;br&gt;They gain buffs in their respective School.</content>
+	<content contentuid="h4398d514e7ef4977b7feecbb240dae2ffe9b" version="1">Oathbreaker</content>
+	<content contentuid="h9499449a637441eca2063232530426b6828a" version="1">This character is an Oathbreaker, gaining &lt;LSTag Tooltip="Resistant"&gt;Resistance&lt;/LSTag&gt; to Radiant and Necrotic damage.</content>
+	<content contentuid="h12345678abcdefg12345678abcdefg1234" version="1">Bloodthirsty</content>
+    <content contentuid="h87654321gfedcba87654321gfedcba8765" version="1">This character is Bloodthirsty, gaining extra damage and healing whenever they attack. They also gain immunity to Bleed effects.</content>
+	<content contentuid="ha123c8b2b6f14b6b98f6c9b6d8b7b2c3a6d4" version="1">Heretic</content>
+	<content contentuid="hb123c8d9c7e14e5b78f6d9e0b7c6a8b2c4a5" version="1">This character is a Heretic, gaining &lt;LSTag Tooltip="Immune"&gt;Immunity&lt;/LSTag&gt; to Charm and Fear effects.</content>
+    <content contentuid="hbf8aff836c544c06b30c28bff45ce5dbc064" version="1">Transforming</content>
+    <content contentuid="h8116fd8321084f8e930154ca6850b60345bg" version="1">This character is a Ceremorph. They are slowly transforming into a powerful Mind Flayer. Defeat them before it's too late.</content>
+</contentList>
